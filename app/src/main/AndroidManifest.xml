@@ -10,6 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyAssist">
         <activity
+            android:name=".profilePage"
+            android:exported="false" />
+        <activity
+            android:name=".timetablePage"
+            android:exported="false" />
+        <activity
+            android:name=".testPage"
+            android:exported="false" />
+        <activity
+            android:name=".addUpcomingPaper"
+            android:exported="false" />
+        <activity
+            android:name=".upcomingPaperPage"
+            android:exported="false" />
+        <activity
+            android:name=".editTask"
+            android:exported="false" />
+        <activity
+            android:name=".addTask"
+            android:exported="false" />
+        <activity
+            android:name=".taskPage"
+            android:exported="false" />
+        <activity
+            android:name=".landingPage"
+            android:exported="false" />
+        <activity
+            android:name=".signInPage"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
