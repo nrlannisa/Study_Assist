@@ -6,4 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".profilePage">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/namelogo"
+        tools:layout_editor_absoluteX="147dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="14dp"
+        android:layout_height="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pole"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/schoolicon"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="425dp"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@drawable/purpleline" />
+
+    <ImageView
+        android:id="@+id/pfpProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pfp"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/courseicon"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/emailicon"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/nameicon"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/nameProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Johnny Appleseed"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <TextView
+        android:id="@+id/courseProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CS270"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/emailProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="johnnyappleseed@student.uitm.edu.my"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="351dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
