@@ -39,4 +39,16 @@
         app:strokeColor="#00FFFFFF"
         tools:layout_editor_absoluteY="378dp"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
+        android:text="FIRST TIME USER"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="436dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
