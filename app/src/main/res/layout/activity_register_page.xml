@@ -43,9 +43,11 @@
 
     <EditText
         android:id="@+id/input_reg_fname"
-        android:layout_width="109dp"
+        android:layout_width="0dp"
         android:layout_height="37dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
         android:background="@drawable/fillbox"
         android:ems="10"
         android:inputType="textPersonName"
@@ -53,14 +55,16 @@
         android:textAlignment="center"
         android:textColor="#4A4DFF"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintEnd_toStartOf="@+id/input_reg_lname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass" />
 
     <EditText
         android:id="@+id/input_reg_lname"
-        android:layout_width="109dp"
+        android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="86dp"
         android:background="@drawable/fillbox"
         android:ems="10"
         android:inputType="textPersonName"
@@ -68,8 +72,9 @@
         android:textAlignment="center"
         android:textColor="#4A4DFF"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass"
-        tools:layout_editor_absoluteX="216dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_reg_fname"
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass" />
 
     <EditText
         android:id="@+id/input_reg_course"
@@ -116,29 +121,35 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="29dp"
+        android:layout_width="0dp"
         android:layout_height="28dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/schoolicon"
-        tools:layout_editor_absoluteX="211dp" />
+        app:srcCompat="@drawable/schoolicon" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="50dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
+        android:layout_marginStart="147dp"
         android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/namelogo"
-        tools:layout_editor_absoluteX="147dp" />
+        app:srcCompat="@drawable/namelogo" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="14dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
         app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pole" />

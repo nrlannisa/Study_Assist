@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class landingPage extends AppCompatActivity {
 
     private FirebaseAuth fAuth;
@@ -15,7 +19,7 @@ public class landingPage extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
         if (fAuth.getCurrentUser() != null) {
-            fNotesDatabase = FirebaseDatabase.getInstance().getReference().child("Notes").child(fAuth.getCurrentUser().getUid());
+            DatabaseReference fNotesDatabase = FirebaseDatabase.getInstance().getReference().child("Notes").child(fAuth.getCurrentUser().getUid());
         }
 
         updateUI();

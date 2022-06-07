@@ -9,56 +9,67 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="29dp"
+        android:layout_width="0dp"
         android:layout_height="28dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/schoolicon"
-        tools:layout_editor_absoluteX="211dp" />
+        app:srcCompat="@drawable/schoolicon" />
 
     <ImageView
         android:id="@+id/imageView22"
-        android:layout_width="14dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView18"
         app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pole" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="50dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
+        android:layout_marginStart="147dp"
         android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/namelogo"
-        tools:layout_editor_absoluteX="147dp" />
+        app:srcCompat="@drawable/namelogo" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="116dp"
-        android:layout_height="43dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="546dp"
         android:text="The Task"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
         android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/addTask"
-        tools:layout_editor_absoluteY="695dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/addtask" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -66,12 +77,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:backgroundTint="#00FFFFFF"
-        android:tint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/addtask" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/addtask"
+        app:tint="#00FFFFFF" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -81,6 +93,6 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

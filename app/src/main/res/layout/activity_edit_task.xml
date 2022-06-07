@@ -10,26 +10,30 @@
 
     <ImageButton
         android:id="@+id/imageButton19"
-        android:layout_width="146dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="42dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton18"
         app:layout_constraintTop_toBottomOf="@+id/imageView61"
-        app:srcCompat="@drawable/lowPrio"
-        tools:layout_editor_absoluteX="223dp" />
+        app:srcCompat="@drawable/lowprio" />
 
     <ImageButton
         android:id="@+id/imageButton18"
-        android:layout_width="146dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView61"
-        app:srcCompat="@drawable/highPrio" />
+        app:srcCompat="@drawable/highprio" />
 
     <ImageView
         android:id="@+id/imageView61"
@@ -87,7 +91,7 @@
     <ImageView
         android:id="@+id/imageView59"
         android:layout_width="102dp"
-        android:layout_height="16"
+        android:layout_height="16dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -112,31 +116,40 @@
 
     <ImageView
         android:id="@+id/imageView50"
-        android:layout_width="29dp"
-        android:layout_height="28dp"
-        app:srcCompat="@drawable/schoolicon"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="655dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView52"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schoolicon" />
 
     <ImageView
         android:id="@+id/imageView52"
-        android:layout_width="50dp"
+        android:layout_width="0dp"
         android:layout_height="26dp"
+        android:layout_marginStart="147dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView50"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/namelogo"
-        tools:layout_editor_absoluteX="147dp" />
+        app:srcCompat="@drawable/namelogo" />
 
     <ImageButton
         android:id="@+id/imageButton20"
         android:layout_width="96dp"
-        android:layout_height="91dp"
+        android:layout_height="0dp"
         android:layout_marginTop="124dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView61"
+        app:layout_constraintTop_toBottomOf="@+id/imageView50"
         app:srcCompat="@drawable/doneedit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
