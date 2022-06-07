@@ -1,8 +1,10 @@
-package com.example.studyassist;
+package com.example.studyassist.user_sign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.studyassist.R;
 
 public class signInPage extends AppCompatActivity {
 

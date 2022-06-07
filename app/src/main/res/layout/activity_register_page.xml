@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/registerbg"
-    tools:context=".RegisterPage">
+    tools:context=".user_sign.RegisterPage">
 
     <EditText
-        android:id="@+id/emailRegister"
+        android:id="@+id/input_reg_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -24,20 +24,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/signup_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/button"
-        android:backgroundTint="#4A4DFF"
-        android:text="Sign Up!"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/courseRegister" />
-
     <EditText
-        android:id="@+id/pwdRegister"
+        android:id="@+id/input_reg_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -51,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_email" />
 
     <EditText
-        android:id="@+id/firstnRegister"
+        android:id="@+id/input_reg_fname"
         android:layout_width="109dp"
         android:layout_height="37dp"
         android:layout_marginTop="20dp"
@@ -65,11 +53,26 @@
         android:textAlignment="center"
         android:textColor="#4A4DFF"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/pwdRegister"
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass"
         tools:layout_editor_absoluteX="88dp" />
 
     <EditText
-        android:id="@+id/courseRegister"
+        android:id="@+id/input_reg_lname"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fillbox"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="#4A4DFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_pass"
+        tools:layout_editor_absoluteX="216dp" />
+
+    <EditText
+        android:id="@+id/input_reg_course"
         android:layout_width="240dp"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
@@ -83,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondnRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_lname" />
 
     <TextView
         android:id="@+id/textView"
@@ -98,6 +101,18 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#4A4DFF"
+        android:text="Sign Up!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_reg_course" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -127,20 +142,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pole" />
-
-    <EditText
-        android:id="@+id/secondnRegister"
-        android:layout_width="109dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/fillbox"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Last Name"
-        android:textAlignment="center"
-        android:textColor="#4A4DFF"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/pwdRegister"
-        tools:layout_editor_absoluteX="216dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

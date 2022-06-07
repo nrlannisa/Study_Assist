@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="376dp">
+
+        <Button
+            android:id="@+id/main_reg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FIRST TIME USER"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/main_sign_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Sign In"
+            android:textColor="#FFFFFF"
+            app:iconTint="#00FFFFFF"
+            app:strokeColor="#00FFFFFF"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -24,31 +55,4 @@
         tools:layout_editor_absoluteX="80dp"
         tools:layout_editor_absoluteY="254dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Sign In"
-        android:textColor="#FFFFFF"
-        app:iconTint="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#00FFFFFF"
-        tools:layout_editor_absoluteY="378dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="217dp"
-        android:layout_height="43dp"
-        android:text="FIRST TIME USER"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="436dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

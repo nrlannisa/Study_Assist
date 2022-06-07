@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.studyassist">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -37,10 +39,10 @@
             android:name=".landingPage"
             android:exported="false" />
         <activity
-            android:name=".signInPage"
+            android:name=".user_sign.signInPage"
             android:exported="false" />
         <activity
-            android:name=".RegisterPage"
+            android:name=".user_sign.RegisterPage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

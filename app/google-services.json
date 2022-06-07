@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "216047376876",
+    "project_id": "study-assist-9a83c",
+    "storage_bucket": "study-assist-9a83c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216047376876:android:562ae5f189da638ea4c8c9",
+        "android_client_info": {
+          "package_name": "com.example.studyassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216047376876-a4u8lt80t183d93gsqkliktctjq0gp8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studyassist",
+            "certificate_hash": "d43361f55c692791472548e7cf00946f3421a8f5"
+          }
+        },
+        {
+          "client_id": "216047376876-q3nvi09uadok5i6ilnchismc4jt0dolf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeLxTVtmgy3p11VhteGBWHXeADfxP4sR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216047376876-q3nvi09uadok5i6ilnchismc4jt0dolf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
