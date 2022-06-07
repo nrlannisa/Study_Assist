@@ -1,21 +1,28 @@
 package com.example.studyassist.user_sign;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.studyassist.R;
+import com.example.studyassist.landingPage;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Objects;
+
 public class RegisterPage extends AppCompatActivity {
 
-    private Button btnReg;
     private EditText inEmail, inPass, inFName, inLName, inCourse;
 
     private FirebaseAuth fAuth;
@@ -28,7 +35,7 @@ public class RegisterPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_page);
 
-        btnReg = (Button) findViewById(R.id.btn_reg);
+        Button btnReg = (Button) findViewById(R.id.btn_reg);
         inFName = (EditText) findViewById(R.id.input_reg_fname);
         inLName = (EditText) findViewById(R.id.input_reg_lname);
         inCourse = (EditText) findViewById(R.id.input_reg_course);
@@ -38,18 +45,15 @@ public class RegisterPage extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
-        btnReg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String ufname = inFName.getEditText().getText().toString().trim();
-                String ulname = inLName.getEditText().getText().toString().trim();
-                String ucourse = inCourse.getEditText().getText().toString().trim();
-                String uemail = inEmail.getEditText().getText().toString().trim();
-                String upass = inPass.getEditText().getText().toString().trim();
+        btnReg.setOnClickListener(view -> {
+            String ufname = inFName.getText().toString().trim();
+            String ulname = inLName.getText().toString().trim();
+            String ucourse = inCourse.getText().toString().trim();
+            String uemail = inEmail.getText().toString().trim();
+            String upass = inPass.getText().toString().trim();
 
-                registerUser(ufname, ulname, ucourse, uemail, upass);
+            registerUser(ufname, ulname, ucourse, uemail, upass);
 
-            }
         });
     }
 
@@ -61,44 +65,38 @@ public class RegisterPage extends AppCompatActivity {
         progressDialog.show();
 
         fAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
+                .addOnCompleteListener(task -> {
 
-                        if (task.isSuccessful()){
+                    if (task.isSuccessful()){
 
-                            fUsersDatabase.child(fAuth.getCurrentUser().getUid())
-                                    .child("basic").child("fname").setValue(fname)
-                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
+                        fUsersDatabase.child(Objects.requireNonNull(fAuth.getCurrentUser()).getUid())
+                                .child("basic").child("fname").setValue(fname)
+                                .addOnCompleteListener(task1 -> {
 
-                                            if (task.isSuccessful()){
+                                    if (task1.isSuccessful()){
 
-                                                progressDialog.dismiss();
+                                        progressDialog.dismiss();
 
-                                                Intent mainIntent = new Intent(RegisterPage.this, landingPage.class);
-                                                MainActivity(mainIntent);
-                                                finish();
-                                                Toast.makeText(RegisterPage.this, "User created!", Toast.LENGTH_SHORT).show();
+                                        Intent mainIntent = new Intent(RegisterPage.this, landingPage.class);
+                                        MainActivity(mainIntent);
+                                        finish();
+                                        Toast.makeText(RegisterPage.this, "User created!", Toast.LENGTH_SHORT).show();
 
-                                            } else {
-                                                progressDialog.dismiss();
-                                                Toast.makeText(RegisterPage.this, "ERROR : " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                            }
+                                    } else {
+                                        progressDialog.dismiss();
+                                        Toast.makeText(RegisterPage.this, "ERROR : " + Objects.requireNonNull(task1.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
 
-                                        }
-                                    });
+                                });
 
-                        } else {
+                    } else {
 
-                            progressDialog.dismiss();
+                        progressDialog.dismiss();
 
-                            Toast.makeText(RegisterPage.this, "ERROR: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-
-                        }
+                        Toast.makeText(RegisterPage.this, "ERROR: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
+
                 });
 
     }

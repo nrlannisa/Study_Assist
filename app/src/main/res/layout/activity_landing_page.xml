@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".landingPage">
+    tools:context=".landingPage"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="151dp">
 
     <ImageView
         android:id="@+id/imageView14"
@@ -16,6 +18,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/schoolicon" />
 
     <ImageView
@@ -23,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="23dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +45,7 @@
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/pole" />
 
     <ProgressBar
@@ -56,18 +60,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <AnalogClock
         android:id="@+id/simpleAnalogClock"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:background="#D3D0D0"
         android:padding="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/testBar" />
 
@@ -75,8 +80,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
         android:text="Time"
         android:textColor="#000000"
         android:textSize="8sp"
@@ -89,7 +94,7 @@
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="116dp"
         android:layout_marginEnd="51dp"
         android:background="#A5A6F6"
         android:indeterminateDrawable="@drawable/progpurple_bg"
@@ -102,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="59dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="8dp"
         android:text="Task"
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="@+id/tvcounter"
@@ -113,7 +118,9 @@
         android:id="@+id/tvcounter"
         android:layout_width="39dp"
         android:layout_height="37dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="169dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -126,8 +133,10 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvcounter"
         app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView14"
-        app:layout_constraintTop_toTopOf="@+id/tvcounter" />
+        app:layout_constraintTop_toTopOf="@+id/tvcounter"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -139,13 +148,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/taskBar"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/round_btn1"
         android:fontFamily="@font/poppins_bold"
         android:text="Task"
@@ -161,12 +171,13 @@
         android:id="@+id/button3"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_btn3"
         android:fontFamily="@font/poppins_bold"
         android:text="Courses"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -174,12 +185,13 @@
         android:id="@+id/button4"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_btn2"
         android:fontFamily="@font/poppins_bold"
         android:text="Upcoming Paper"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -188,7 +200,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="23dp"
         android:background="@drawable/round_btn4"
         android:fontFamily="@font/poppins_bold"
@@ -203,7 +215,7 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_btn5"
         android:fontFamily="@font/poppins_bold"
         android:text="My Profile"

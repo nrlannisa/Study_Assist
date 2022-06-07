@@ -16,20 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView22"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/schoolicon" />
-
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView18"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pole" />
+        app:srcCompat="@drawable/schoolicon"
+        tools:ignore="NotSibling" />
 
     <ImageView
         android:id="@+id/imageView23"
@@ -40,7 +28,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/namelogo" />
+        app:srcCompat="@drawable/namelogo"
+        tools:ignore="NotSibling" />
 
     <TextView
         android:id="@+id/textView10"
@@ -93,6 +82,15 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/pole"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
