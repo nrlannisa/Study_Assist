@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder(StrictMode.getVmPolicy())
+                .detectLeakedClosableObjects()
+                .build());
 
         btnReg = (Button) findViewById(R.id.main_reg_btn);
         btnSign = (Button) findViewById(R.id.main_sign_btn);
@@ -48,21 +53,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void register(){
         Intent regIntent = new Intent(MainActivity.this, RegisterPage.class);
-        MainActivity(regIntent);
+        startActivity(regIntent);
     }
 
     private void login(){
         Intent logIntent = new Intent(MainActivity.this, signInPage.class);
-        MainActivity(logIntent);
+        startActivity(logIntent);
     }
 
     private void updateUI(){
         if (fAuth.getCurrentUser() != null){
             Log.i("MainActivity", "fAuth != null");
-        } else {
             Intent startIntent = new Intent(MainActivity.this, landingPage.class);
-            MainActivity(startIntent);
+            startActivity(startIntent);
             finish();
+        } else {
+
             Log.i("MainActivity", "fAuth == null");
         }
     }

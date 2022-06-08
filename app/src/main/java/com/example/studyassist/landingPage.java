@@ -33,7 +33,7 @@ public class landingPage extends AppCompatActivity {
             Log.i("landingPage", "fAuth != null");
         } else {
             Intent startIntent = new Intent(landingPage.this, MainActivity.class);
-            MainActivity(startIntent);
+            startActivity(startIntent);
             finish();
             Log.i("landingPage", "fAuth == null");
         }

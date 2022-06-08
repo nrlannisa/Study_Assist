@@ -78,7 +78,7 @@ public class RegisterPage extends AppCompatActivity {
                                         progressDialog.dismiss();
 
                                         Intent mainIntent = new Intent(RegisterPage.this, landingPage.class);
-                                        MainActivity(mainIntent);
+                                        startActivity(mainIntent);
                                         finish();
                                         Toast.makeText(RegisterPage.this, "User created!", Toast.LENGTH_SHORT).show();
 
