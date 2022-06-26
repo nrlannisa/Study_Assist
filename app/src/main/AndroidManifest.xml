@@ -18,9 +18,6 @@
             android:name=".timetablePage"
             android:exported="false" />
         <activity
-            android:name=".testPage"
-            android:exported="false" />
-        <activity
             android:name=".addUpcomingPaper"
             android:exported="false" />
         <activity

@@ -4,6 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".upcomingPaperPage">
+    android:background="@drawable/greenbg"
+    tools:context=".testPage">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="132dp"
+        android:text="Upcoming Paper"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/schoolicon"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="14dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pole" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/namelogo"
+        tools:layout_editor_absoluteX="147dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="144dp"
+        android:layout_height="106dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/addpaper"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="454dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="181dp"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

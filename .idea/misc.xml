@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_add_task.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_add_upcoming_paper.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_edit_task.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_landing_page.xml" value="0.536" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_profile_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_register_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_sign_in_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_task_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_test_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_timetable_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Android Projects/Study_Assist/app/src/main/res/layout/activity_upcoming_paper_page.xml" value="0.17708333333333334" />
         <entry key="..\:/Documents/AndroidStudioProjects/Study_Assist/app/src/main/res/layout/activity_add_task.xml" value="0.4" />
         <entry key="..\:/Documents/AndroidStudioProjects/Study_Assist/app/src/main/res/layout/activity_add_upcoming_paper.xml" value="0.259375" />
         <entry key="..\:/Documents/AndroidStudioProjects/Study_Assist/app/src/main/res/layout/activity_edit_task.xml" value="0.259375" />
